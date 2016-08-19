@@ -26,11 +26,15 @@ Swift 2.0
 Sprite kit framework
 Game kit framework that available only on IOS 9.0
 
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/3.png" width="245" height="440"/>
 <img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/>
-<img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/>
-<img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/>
-<img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/>
-<img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/><img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/>
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/2.png" width="245" height="440"/>
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/4.png" width="245" height="440"/>
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/5.png" width="245" height="440"/>
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/6.png" width="245" height="440"/>
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/7.png" width="245" height="440"/>
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/8.png" width="245" height="440"/>
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/9.png" width="245" height="440"/>
 
 ##Credits
 I refered this link -
