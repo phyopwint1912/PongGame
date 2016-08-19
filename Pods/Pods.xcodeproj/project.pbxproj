@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A68C69A4B77EA45FE42F727338EA0F /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AB86A102424AB38740E8A8F8D30A35 /* GCDAsyncUdpSocket.m */; };
+		047C6FCC9428F6D8819504D6CE934263 /* NSDate+NetworkClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9432FBE8EB93D01E114FDB8E7838F9A2 /* NSDate+NetworkClock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17BAA5A131D7E5CB3828B28E3D640FEB /* NetworkClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BDA9E91DA41ECEA4D79A4536569FC44 /* NetworkClock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D7F4167652772424A11D604BE88F229 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F25CA52F07636E9A73F450855CB88E9 /* NSData+SRB64Additions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		346631EC062B25645C12A2AF6C3EBFA1 /* NetAssociation.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D04708EE7116F0743DCA797A735BE6 /* NetAssociation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		354D5199624B25A3F9044E9911E7765C /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833611C192FC1D5A05F52B13B1DB734 /* SocketRocket-dummy.m */; };
+		364C68003859403B6528F0213F0A9819 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83361CC4D55BE94302C2C78DB46E6F22 /* Foundation.framework */; };
+		439E0E6C405E1BDD77D7D0B4CDA639E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2C64B93C5FC5F572E231F012A4BF4D /* CoreGraphics.framework */; };
+		499B1415B2C2871D11CF40C89A3A0F68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83361CC4D55BE94302C2C78DB46E6F22 /* Foundation.framework */; };
+		5078E24732289C6807812061FC7531C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83361CC4D55BE94302C2C78DB46E6F22 /* Foundation.framework */; };
+		56A47ACCC04CEA682C0CEA0FF7F9BD8E /* NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = C929C54B76C7328F09B7F090072FFFA5 /* NetworkClock.m */; };
+		5FEA35C80CCDA86195C23775790EBEAB /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 210D3AA4451583BF5A1E937EDB6C436D /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64643A487E672A096804BA5B3AFF362F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8A140CB8B9E454B187B028A26E8CD5 /* UIKit.framework */; };
+		68540B40A103C9ECF368B32CA83B5820 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FA717E7B516235F97EFF52F096191 /* base64.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6A86D3B07A88484E71C52AC046C9FF3A /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 914AACA814E97F05A7D5822431B126F2 /* SRWebSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6B7CFC2916BC67CA9E5D354BCA79435A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCA7E2F0ED1AC17CE019C480B5A6FB7 /* Security.framework */; };
+		730D5964177D9F1E7A8CCB68E224D263 /* NSDate+NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = F81B2D87113D9D86D3A9B19317BC576F /* NSDate+NetworkClock.m */; };
+		873CB14874B37B44E1AA2F5CAB839745 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = CCCA5A7971D995C107779DFEBD187231 /* base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FC1F1A5527D949FC2F3300D70745B25 /* ios-ntp.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A00FF38973B4BDAA05F262378F7A8F /* ios-ntp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0C0A78BFBCBBE256F60FEC85176C6DB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D40BE775F833E650148747A30ACF01 /* CFNetwork.framework */; };
+		BA358ABDC71325E9A00316D4F19980CE /* tema-ios-ntp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F73B0F01D341E82FB8279241DFCC2C70 /* tema-ios-ntp-dummy.m */; };
+		CA18F9DFCB11F7D03AC9BD5C203096A5 /* Pods-PongGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D51AE6235A83EF32F227978F67E5FEF /* Pods-PongGame-dummy.m */; };
+		CC74CACAF5E88EF23BF8DD0489E05F78 /* NetAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = B66C8B330EFA9922BEC53EED6BD8C049 /* NetAssociation.m */; };
+		E6EDE8ADCE0E41FD71F87445EEB11026 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D40BE775F833E650148747A30ACF01 /* CFNetwork.framework */; };
+		E9C914C50B4D3B6A84CB80BA95504909 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BB596D7288CBEF5C864FBF7C6F4DC45 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB8CC065BF5E3A5BE8BDEB5AE34B63C0 /* NSData+SRB64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = BC881AD1EE5FF97CC9492F0DCB177D76 /* NSData+SRB64Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50EA8AB1019F2B6D879AC1DCFB03331E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0768B4343504A93478B0A410725EDA43;
+			remoteInfo = "tema-ios-ntp";
+		};
+		946642225D5B9D0F91E388F90894A0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB5156786BC9FBC2F1B211D3DAE04C5F;
+			remoteInfo = SocketRocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008B0127903E976049293098172428ED /* tema-ios-ntp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "tema-ios-ntp.xcconfig"; sourceTree = "<group>"; };
+		0CCA7E2F0ED1AC17CE019C480B5A6FB7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		1833611C192FC1D5A05F52B13B1DB734 /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
+		1E2C64B93C5FC5F572E231F012A4BF4D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		1F83D3425FB0BFC1B697A514463570CE /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
+		210D3AA4451583BF5A1E937EDB6C436D /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		23C18D0104F0B1B58A98D5C7EEFA1AB1 /* libPods-PongGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PongGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D40BE775F833E650148747A30ACF01 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		254C6269EC8F39F281AA91A6561E8C2F /* ntp.hosts */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ntp.hosts; path = "ios-ntp-rez/ntp.hosts"; sourceTree = "<group>"; };
+		2BB596D7288CBEF5C864FBF7C6F4DC45 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = "network-udp/GCDAsyncUdpSocket.h"; sourceTree = "<group>"; };
+		376265B03810841DA3159546A5A49FCF /* Pods-PongGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PongGame-frameworks.sh"; sourceTree = "<group>"; };
+		3B0FA717E7B516235F97EFF52F096191 /* base64.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = base64.c; path = SocketRocket/base64.c; sourceTree = "<group>"; };
+		3EF301AE9E6A36F58050613114226242 /* Pods-PongGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PongGame-resources.sh"; sourceTree = "<group>"; };
+		49D04708EE7116F0743DCA797A735BE6 /* NetAssociation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NetAssociation.h; path = "ios-ntp-lib/NetAssociation.h"; sourceTree = "<group>"; };
+		52F1B9A0656DB647E0D0DD6224C0C96F /* SKYLINK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SKYLINK.framework; sourceTree = "<group>"; };
+		5BDA9E91DA41ECEA4D79A4536569FC44 /* NetworkClock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NetworkClock.h; path = "ios-ntp-lib/NetworkClock.h"; sourceTree = "<group>"; };
+		67AB86A102424AB38740E8A8F8D30A35 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = "network-udp/GCDAsyncUdpSocket.m"; sourceTree = "<group>"; };
+		6D51AE6235A83EF32F227978F67E5FEF /* Pods-PongGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PongGame-dummy.m"; sourceTree = "<group>"; };
+		7E5A308D0B0FD6BA2CE790DE0C8BF9FA /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F25CA52F07636E9A73F450855CB88E9 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SRB64Additions.m"; path = "SocketRocket/NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		80D3B272A691923C27347931AA9AD0A8 /* libtema-ios-ntp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libtema-ios-ntp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83361CC4D55BE94302C2C78DB46E6F22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		914AACA814E97F05A7D5822431B126F2 /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9432FBE8EB93D01E114FDB8E7838F9A2 /* NSDate+NetworkClock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+NetworkClock.h"; path = "ios-ntp-lib/NSDate+NetworkClock.h"; sourceTree = "<group>"; };
+		AA8A140CB8B9E454B187B028A26E8CD5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B66C8B330EFA9922BEC53EED6BD8C049 /* NetAssociation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NetAssociation.m; path = "ios-ntp-lib/NetAssociation.m"; sourceTree = "<group>"; };
+		BC881AD1EE5FF97CC9492F0DCB177D76 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SRB64Additions.h"; path = "SocketRocket/NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		C929C54B76C7328F09B7F090072FFFA5 /* NetworkClock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NetworkClock.m; path = "ios-ntp-lib/NetworkClock.m"; sourceTree = "<group>"; };
+		CCCA5A7971D995C107779DFEBD187231 /* base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base64.h; path = SocketRocket/base64.h; sourceTree = "<group>"; };
+		DC025F1EB6F2FAF5FB9BFC0081F606BA /* tema-ios-ntp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "tema-ios-ntp-prefix.pch"; sourceTree = "<group>"; };
+		E4C3BCE3196538D56B230CF0C36479FC /* Pods-PongGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PongGame.debug.xcconfig"; sourceTree = "<group>"; };
+		E5F2803752BC4A08AB689D883FEDCA59 /* Pods-PongGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PongGame.release.xcconfig"; sourceTree = "<group>"; };
+		E7D72F7AA2CB7CD533C3914289908310 /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
+		ECA254901487CEF4AE7F2EFF1BB8FBDF /* Pods-PongGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PongGame-acknowledgements.plist"; sourceTree = "<group>"; };
+		F1BD8B42DB6FD3768E40FA4AAB2835EA /* Pods-PongGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PongGame-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F6A00FF38973B4BDAA05F262378F7A8F /* ios-ntp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ios-ntp.h"; path = "ios-ntp-lib/ios-ntp.h"; sourceTree = "<group>"; };
+		F73B0F01D341E82FB8279241DFCC2C70 /* tema-ios-ntp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "tema-ios-ntp-dummy.m"; sourceTree = "<group>"; };
+		F81B2D87113D9D86D3A9B19317BC576F /* NSDate+NetworkClock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+NetworkClock.m"; path = "ios-ntp-lib/NSDate+NetworkClock.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B08801E2C5C5111F062638C0830D9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364C68003859403B6528F0213F0A9819 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC39D605663E86A4E27468A8889E5CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C0A78BFBCBBE256F60FEC85176C6DB /* CFNetwork.framework in Frameworks */,
+				499B1415B2C2871D11CF40C89A3A0F68 /* Foundation.framework in Frameworks */,
+				6B7CFC2916BC67CA9E5D354BCA79435A /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C603C4531EBF7A82189C6EB1886363C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6EDE8ADCE0E41FD71F87445EEB11026 /* CFNetwork.framework in Frameworks */,
+				439E0E6C405E1BDD77D7D0B4CDA639E5 /* CoreGraphics.framework in Frameworks */,
+				5078E24732289C6807812061FC7531C1 /* Foundation.framework in Frameworks */,
+				64643A487E672A096804BA5B3AFF362F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047B24D47E6711D71E41CA09A1EF98B7 /* Pods-PongGame */ = {
+			isa = PBXGroup;
+			children = (
+				F1BD8B42DB6FD3768E40FA4AAB2835EA /* Pods-PongGame-acknowledgements.markdown */,
+				ECA254901487CEF4AE7F2EFF1BB8FBDF /* Pods-PongGame-acknowledgements.plist */,
+				6D51AE6235A83EF32F227978F67E5FEF /* Pods-PongGame-dummy.m */,
+				376265B03810841DA3159546A5A49FCF /* Pods-PongGame-frameworks.sh */,
+				3EF301AE9E6A36F58050613114226242 /* Pods-PongGame-resources.sh */,
+				E4C3BCE3196538D56B230CF0C36479FC /* Pods-PongGame.debug.xcconfig */,
+				E5F2803752BC4A08AB689D883FEDCA59 /* Pods-PongGame.release.xcconfig */,
+			);
+			name = "Pods-PongGame";
+			path = "Target Support Files/Pods-PongGame";
+			sourceTree = "<group>";
+		};
+		05F38D494E0679B77C7F2F6A39C60A0D /* tema-ios-ntp */ = {
+			isa = PBXGroup;
+			children = (
+				2BB596D7288CBEF5C864FBF7C6F4DC45 /* GCDAsyncUdpSocket.h */,
+				67AB86A102424AB38740E8A8F8D30A35 /* GCDAsyncUdpSocket.m */,
+				F6A00FF38973B4BDAA05F262378F7A8F /* ios-ntp.h */,
+				49D04708EE7116F0743DCA797A735BE6 /* NetAssociation.h */,
+				B66C8B330EFA9922BEC53EED6BD8C049 /* NetAssociation.m */,
+				5BDA9E91DA41ECEA4D79A4536569FC44 /* NetworkClock.h */,
+				C929C54B76C7328F09B7F090072FFFA5 /* NetworkClock.m */,
+				9432FBE8EB93D01E114FDB8E7838F9A2 /* NSDate+NetworkClock.h */,
+				F81B2D87113D9D86D3A9B19317BC576F /* NSDate+NetworkClock.m */,
+				6FB667F1338F991AC1FDEA83C205A365 /* Resources */,
+				52627F5F554B268D743325274ED44885 /* Support Files */,
+			);
+			path = "tema-ios-ntp";
+			sourceTree = "<group>";
+		};
+		0FA32C4DC365F12E526FF9F1DD893E60 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7D72F7AA2CB7CD533C3914289908310 /* SocketRocket.xcconfig */,
+				1833611C192FC1D5A05F52B13B1DB734 /* SocketRocket-dummy.m */,
+				1F83D3425FB0BFC1B697A514463570CE /* SocketRocket-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SocketRocket";
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA45D10CE9EF278C946210F2B1FD3CCC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31B82C6E971A2963C220C4A2CB8F8E28 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				3B0FA717E7B516235F97EFF52F096191 /* base64.c */,
+				CCCA5A7971D995C107779DFEBD187231 /* base64.h */,
+				BC881AD1EE5FF97CC9492F0DCB177D76 /* NSData+SRB64Additions.h */,
+				7F25CA52F07636E9A73F450855CB88E9 /* NSData+SRB64Additions.m */,
+				210D3AA4451583BF5A1E937EDB6C436D /* SRWebSocket.h */,
+				914AACA814E97F05A7D5822431B126F2 /* SRWebSocket.m */,
+				0FA32C4DC365F12E526FF9F1DD893E60 /* Support Files */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		4C1A701FD58361BE6CC412CC1A6E1F4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23C18D0104F0B1B58A98D5C7EEFA1AB1 /* libPods-PongGame.a */,
+				7E5A308D0B0FD6BA2CE790DE0C8BF9FA /* libSocketRocket.a */,
+				80D3B272A691923C27347931AA9AD0A8 /* libtema-ios-ntp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52627F5F554B268D743325274ED44885 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				008B0127903E976049293098172428ED /* tema-ios-ntp.xcconfig */,
+				F73B0F01D341E82FB8279241DFCC2C70 /* tema-ios-ntp-dummy.m */,
+				DC025F1EB6F2FAF5FB9BFC0081F606BA /* tema-ios-ntp-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/tema-ios-ntp";
+			sourceTree = "<group>";
+		};
+		6FB667F1338F991AC1FDEA83C205A365 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				254C6269EC8F39F281AA91A6561E8C2F /* ntp.hosts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7D6520DA70A1787540F86B82F68F4220 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52F1B9A0656DB647E0D0DD6224C0C96F /* SKYLINK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				D7881516E7DE042BDCA42131619923DB /* Pods */,
+				4C1A701FD58361BE6CC412CC1A6E1F4E /* Products */,
+				99831CD9D4875221D8105D7A1EF05817 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		99831CD9D4875221D8105D7A1EF05817 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				047B24D47E6711D71E41CA09A1EF98B7 /* Pods-PongGame */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D7881516E7DE042BDCA42131619923DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5E03739462CB85CD6EC41DDF53C0E85 /* SKYLINK */,
+				31B82C6E971A2963C220C4A2CB8F8E28 /* SocketRocket */,
+				05F38D494E0679B77C7F2F6A39C60A0D /* tema-ios-ntp */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA45D10CE9EF278C946210F2B1FD3CCC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				24D40BE775F833E650148747A30ACF01 /* CFNetwork.framework */,
+				1E2C64B93C5FC5F572E231F012A4BF4D /* CoreGraphics.framework */,
+				83361CC4D55BE94302C2C78DB46E6F22 /* Foundation.framework */,
+				0CCA7E2F0ED1AC17CE019C480B5A6FB7 /* Security.framework */,
+				AA8A140CB8B9E454B187B028A26E8CD5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F5E03739462CB85CD6EC41DDF53C0E85 /* SKYLINK */ = {
+			isa = PBXGroup;
+			children = (
+				7D6520DA70A1787540F86B82F68F4220 /* Frameworks */,
+			);
+			path = SKYLINK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		44D156B12061D03BD3EDF3F420CCF893 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C914C50B4D3B6A84CB80BA95504909 /* GCDAsyncUdpSocket.h in Headers */,
+				9FC1F1A5527D949FC2F3300D70745B25 /* ios-ntp.h in Headers */,
+				346631EC062B25645C12A2AF6C3EBFA1 /* NetAssociation.h in Headers */,
+				17BAA5A131D7E5CB3828B28E3D640FEB /* NetworkClock.h in Headers */,
+				047C6FCC9428F6D8819504D6CE934263 /* NSDate+NetworkClock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C51999D1EBDB094F81158EFC58A466E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873CB14874B37B44E1AA2F5CAB839745 /* base64.h in Headers */,
+				FB8CC065BF5E3A5BE8BDEB5AE34B63C0 /* NSData+SRB64Additions.h in Headers */,
+				5FEA35C80CCDA86195C23775790EBEAB /* SRWebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0768B4343504A93478B0A410725EDA43 /* tema-ios-ntp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF352B7A08C565C30F9116529C6B5844 /* Build configuration list for PBXNativeTarget "tema-ios-ntp" */;
+			buildPhases = (
+				36D79651DCD56D6AA1162A16DD10F450 /* Sources */,
+				C603C4531EBF7A82189C6EB1886363C5 /* Frameworks */,
+				44D156B12061D03BD3EDF3F420CCF893 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tema-ios-ntp";
+			productName = "tema-ios-ntp";
+			productReference = 80D3B272A691923C27347931AA9AD0A8 /* libtema-ios-ntp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8848352E4E76DBB786FA76094BBF7CF9 /* Pods-PongGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95ADAF2C01ABE6441025675859C8C9F0 /* Build configuration list for PBXNativeTarget "Pods-PongGame" */;
+			buildPhases = (
+				8771E633C0029CED4C3AF52170D1ECC6 /* Sources */,
+				4B08801E2C5C5111F062638C0830D9DC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE4E0D33D107FCB715E71F7D14E09BC9 /* PBXTargetDependency */,
+				ACF19C6B9867D71AEA932B1FFA035810 /* PBXTargetDependency */,
+			);
+			name = "Pods-PongGame";
+			productName = "Pods-PongGame";
+			productReference = 23C18D0104F0B1B58A98D5C7EEFA1AB1 /* libPods-PongGame.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AB5156786BC9FBC2F1B211D3DAE04C5F /* SocketRocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D085E5D497AD6669A05DD0361233A967 /* Build configuration list for PBXNativeTarget "SocketRocket" */;
+			buildPhases = (
+				B10D7DF027D08B08F1C3DA9BD4E48B81 /* Sources */,
+				AC39D605663E86A4E27468A8889E5CD8 /* Frameworks */,
+				9C51999D1EBDB094F81158EFC58A466E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketRocket;
+			productName = SocketRocket;
+			productReference = 7E5A308D0B0FD6BA2CE790DE0C8BF9FA /* libSocketRocket.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4C1A701FD58361BE6CC412CC1A6E1F4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8848352E4E76DBB786FA76094BBF7CF9 /* Pods-PongGame */,
+				AB5156786BC9FBC2F1B211D3DAE04C5F /* SocketRocket */,
+				0768B4343504A93478B0A410725EDA43 /* tema-ios-ntp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36D79651DCD56D6AA1162A16DD10F450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A68C69A4B77EA45FE42F727338EA0F /* GCDAsyncUdpSocket.m in Sources */,
+				CC74CACAF5E88EF23BF8DD0489E05F78 /* NetAssociation.m in Sources */,
+				56A47ACCC04CEA682C0CEA0FF7F9BD8E /* NetworkClock.m in Sources */,
+				730D5964177D9F1E7A8CCB68E224D263 /* NSDate+NetworkClock.m in Sources */,
+				BA358ABDC71325E9A00316D4F19980CE /* tema-ios-ntp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8771E633C0029CED4C3AF52170D1ECC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA18F9DFCB11F7D03AC9BD5C203096A5 /* Pods-PongGame-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10D7DF027D08B08F1C3DA9BD4E48B81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68540B40A103C9ECF368B32CA83B5820 /* base64.c in Sources */,
+				1D7F4167652772424A11D604BE88F229 /* NSData+SRB64Additions.m in Sources */,
+				354D5199624B25A3F9044E9911E7765C /* SocketRocket-dummy.m in Sources */,
+				6A86D3B07A88484E71C52AC046C9FF3A /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACF19C6B9867D71AEA932B1FFA035810 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "tema-ios-ntp";
+			target = 0768B4343504A93478B0A410725EDA43 /* tema-ios-ntp */;
+			targetProxy = 50EA8AB1019F2B6D879AC1DCFB03331E /* PBXContainerItemProxy */;
+		};
+		AE4E0D33D107FCB715E71F7D14E09BC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = AB5156786BC9FBC2F1B211D3DAE04C5F /* SocketRocket */;
+			targetProxy = 946642225D5B9D0F91E388F90894A0B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4820239ADBE7D8DB5D9BB580F83DF98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C3BCE3196538D56B230CF0C36479FC /* Pods-PongGame.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		65429D2F887B4B33CB227E3574D3349B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D72F7AA2CB7CD533C3914289908310 /* SocketRocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		76E55E4A550EBD3235D0F1909B2AE69D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 008B0127903E976049293098172428ED /* tema-ios-ntp.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/tema-ios-ntp/tema-ios-ntp-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C282660DCB2992D51A834F5720F31DE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5F2803752BC4A08AB689D883FEDCA59 /* Pods-PongGame.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CF768295C3E94E346C6665D5038DD4F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7D72F7AA2CB7CD533C3914289908310 /* SocketRocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F262F251FE5906D5EBF5BF2A17B7028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 008B0127903E976049293098172428ED /* tema-ios-ntp.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/tema-ios-ntp/tema-ios-ntp-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95ADAF2C01ABE6441025675859C8C9F0 /* Build configuration list for PBXNativeTarget "Pods-PongGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4820239ADBE7D8DB5D9BB580F83DF98A /* Debug */,
+				C282660DCB2992D51A834F5720F31DE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D085E5D497AD6669A05DD0361233A967 /* Build configuration list for PBXNativeTarget "SocketRocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65429D2F887B4B33CB227E3574D3349B /* Debug */,
+				CF768295C3E94E346C6665D5038DD4F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF352B7A08C565C30F9116529C6B5844 /* Build configuration list for PBXNativeTarget "tema-ios-ntp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76E55E4A550EBD3235D0F1909B2AE69D /* Debug */,
+				F262F251FE5906D5EBF5BF2A17B7028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
