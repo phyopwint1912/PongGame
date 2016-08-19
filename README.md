@@ -1,5 +1,7 @@
 # PongGame
 
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/Icon-App-60x60%403x.png" width="100" height="100"/>
+
 ##Pong Game IOS App (Skylink SDK Version 1.0.9)
 
 Pong is a two-dimensional sport game that simulates table tennis. The player controls an in-game paddle by moving it horizontally across the lower side of the screen, and can compete against another player controlling a second paddle on the opposing side. Players use the paddles to hit a ball back and forth within different levels. The aim is for each player to reach five points before the opponent; points are earned when one fails to return the ball to the other.
@@ -23,6 +25,12 @@ Xcode 7.3
 Swift 2.0
 Sprite kit framework
 Game kit framework that available only on IOS 9.0
+
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/>
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/>
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/>
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/>
+<img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/><img src="https://github.com/phyopwint1912/PongGame/blob/master/1.png" width="245" height="440"/>
 
 ##Credits
 I refered this link -
